@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+h1 {
+    color: #af9164; 
+    background-color: #2B2118; 
+    text-align: center; 
+    font-size: 1.5em;
+}
+.parte-fixa {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: #dac8ae;
+    border-bottom: 2px solid #fdfdfda7;
+    padding: 7px;
+    align-items: center;
+}
+.parte-fixa img {
+    width: 30px;
+    
+}
+.parte-fixa a {
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1.1em;
+    ;
+    
+}
+.parte-fixa a:visited {
+    color: currentColor;
+}
+.parte-fixa a:active{
+    background-color: #2B2118;
+    color: #f7f3e3;
+    border-radius: 10px;
+}
+.parte-fixa a:hover {
+    text-decoration: overline underline solid;
+    color: black;
+    border-radius: 10px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+    background-image: url('imagem/fundo_black.jpg');
+    background-size: auto;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.apresentacao p {
+    padding-top: 8px;
+    color: #f7f3e3;
+    text-shadow: 2px 2px black;
+}
+.img {
+    display: flex;
+    height: 300px;
+}
+.conteudo1 {
+    background-color: #dac8ae;
+}
+.conteudo1 img {
+    height: 0px;
+    display: block;
+    margin: 15px auto;
+}
+.conteudo2 {
+    background-color: #f7f3e3;
+    
+}
+.conteudo2 table {
+    border-spacing: 8px;
+    margin: auto;
+    width: 50vw;
+    text-align: center;
+}
+p {
+    padding: 15px;
+}
+
+a:visited {
+    color: #f7f3e3; 
+}
+footer {
+    font-family: Arial, Helvetica, sans-serif, 'Arial Narrow', Arial, sans-serif; font-size: small;
+    padding: 6px;
+    background-color: #2B2118;
+    color: #f7f3e3;
+    
+}
+.video-container {
+    position: relative;
+    width: 60%;
+    padding-bottom: 30%; 
+    overflow: hidden;
+    margin-left: 20%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 80vh;
+}
