@@ -37,10 +37,10 @@ header {
 }
 .toolbar a {
     padding: 8px;
-    
     color: white;
     text-decoration: none;
     font-weight: bolder;
+    
 } 
 .toolbar a:hover {
     background-color: #F8B703;
@@ -62,7 +62,8 @@ header {
 .home {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 70px;
+    padding-top: 130px;
+    padding: 50px;
     height: 130vh;
     background-color: #F8B703;
     background-image: url('imagem/brush_respingo_tinta.png');
@@ -115,8 +116,8 @@ header {
 .fellipe {
     background-color: #F8B703;
     text-align: center;
-    padding: 30px 15px 0px 15px;
-    height: 440px;
+    padding: 30px 15px;
+    
     background-color: #F8B703;
     background-image: url('imagem/brush_respingo_tinta.png');
     background-position: center center;
@@ -142,6 +143,10 @@ header {
 .portifolio {
     background-color: white;
     height: 100vh;
+}
+.portifolio h2, p {
+    text-align: center;
+    padding-top: 30px;
 }
 .contato {
     background-color: #F8B703;
@@ -177,7 +182,7 @@ footer {
 }
 footer p,a {
     text-decoration: none;
-    font-size: .8em;
+    
 }
 footer a:visited {
     color: currentColor
