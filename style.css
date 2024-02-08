@@ -9,25 +9,69 @@
 body {
     background-color: #F8B703;
 }
+.logo {
+    display: flex;
+    height: 50px;
+}
 header {
     position: fixed;
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     width: 100vw;
-    height: 50px;
-    padding-top: 15px;
+    padding: 10px 30px;
     color: white;
-}    
+    z-index: 2;
+}
+ 
+.toolbar {
+    display: block;
+    background-color: black;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    text-align: center;
+    z-index: 1;
+    border-bottom: 2px solid white;
+}
+.toolbar a {
+    padding: 8px;
     
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+} 
+.toolbar a:hover {
+    background-color: #F8B703;
+    color: black;
+    border-radius: 15px;
+    transition: .5s;
+}
+.whatsapp {
+    background-color: #F8B703;
+    padding: 10px;
+    border-radius: 15px;
+}
+.whatsapp a{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
 .home {
     display: flex;
     flex-wrap: wrap;
-    padding: 100px;
+    padding: 50px 70px;
+    height: 130vh;
     background-color: #F8B703;
-    padding-top: 130px;
-    gap: 180px;
+    background-image: url('imagem/brush_respingo_tinta.png');
+    background-position: center center;
+    background-size: 100%;
+    background-attachment: fixed;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 100px;
+    justify-content: space-around;
+    
     
 }
 .foto_perfil  img {
@@ -44,10 +88,9 @@ header {
     background-color: white;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    height: 60vh;
-    width: 100vw;
+    height: 70vh;
     
 }
 .skills h2 {
@@ -73,25 +116,56 @@ header {
     background-color: #F8B703;
     text-align: center;
     padding: 30px 15px 0px 15px;
-    height: 420px;
+    height: 440px;
+    background-color: #F8B703;
+    background-image: url('imagem/brush_respingo_tinta.png');
+    background-position: center center;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 .fellipe p {
+    color: white;
+    font-weight: bolder;
     max-width: 800px;
     text-align: justify;
     margin: auto;
-    padding: 10px;
+    padding: 5px;
+    background-color: rgba(39, 39, 39, 0.244);
+    border-radius: 10px;
 }
 .fellipe img {
     max-width: 300px;
-    margin: 10px;
-    padding: 50px 0px 50px 0px;
+    margin: 5px;
+    padding: 30px 0px;
     margin: auto;
 }
 .portifolio {
     background-color: white;
+    height: 100vh;
 }
 .contato {
     background-color: #F8B703;
+    background-image: url('imagem/brush_respingo_tinta.png');
+    background-position: center center;
+    background-size: 100%;
+    background-attachment: fixed;
+    align-items: center;
+    height: 70vh;
+}
+.contato img {
+    height: 50px;
+    margin: 10px;
+}
+.contato h2, p {
+    text-align: center;
+    padding: 20px;
+}
+.icon {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 footer {
     color: white;
@@ -99,12 +173,11 @@ footer {
 }
 footer {
     background-color: black;
-    padding: 20px;
+    
 }
-footer a {
+footer p,a {
     text-decoration: none;
-    text-decoration: solid underline;
-    font-size: 1.2em;
+    font-size: .8em;
 }
 footer a:visited {
     color: currentColor
